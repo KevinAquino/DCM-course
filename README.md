@@ -8,6 +8,8 @@ This will be a ~6 part series where we will go through all the basics of modelli
 - stochastic DCM
 - spectral DCM
 
+To go through stochastic DCM we need a SDE solver, I suggest using: https://github.com/horchler/SDETools.git download this before you start IV
+
 Following this material we will describe applications, apply it to some real world data and talk about real world experiences.
 
 # Videos of the lectures/workshop:
