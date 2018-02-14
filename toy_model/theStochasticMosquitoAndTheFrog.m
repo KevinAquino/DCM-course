@@ -27,7 +27,8 @@ A = [-0.5 -0.1;1 0];
 C = [1;0];
 
 % This here calculates the stochastic connectivity term
-g = @(t,z) stochasticDCMterm(t,z,C,inputs);
+stochasticAmplitude = 1;
+g = @(t,z) stochasticDCMterm(t,z,C,inputs,stochasticAmplitude);
 
 % Now using all this information to simulate it all together
 [y] = sde_euler(@(t,z) bilinearModel(t,z,A,C,inputs),g,simulationTime,z_0);

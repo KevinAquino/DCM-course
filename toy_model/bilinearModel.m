@@ -9,14 +9,18 @@ timeVector = inputs(:,1);
 % Determine the total number of inputs
 totalInputs = size(inputs,2) - 1;
 
+u = zeros(totalInputs,1);
+
 % This step now interpolates the inputs onto the same sampling the simulation is at. 
 % For example the inputs might be recorded at a sampling period every 10 ms, but the
 % simulation might instead might have "dt" = 0.01 ms. This ensure it works by using 
 % linear interpolation.
 
-for inputIndex = 1:totalInputs,	
-	u_input = inputs(:,inputIndex+1);
-	u(inputIndex) = interp1(timeVector,u_input,t);
+if(sum(inputs,1~=0))
+	for inputIndex = 1:totalInputs,	
+		u_input = inputs(:,inputIndex+1);
+		u(inputIndex) = interp1(timeVector,u_input,t);
+	end
 end
 
 % Here z is a column vector (same format for the DCM papers)
