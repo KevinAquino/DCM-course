@@ -51,12 +51,12 @@ for region=1:length(regions);
 	plot(simulationTime,z_output(:,region));
 	title(regions{region});
 	xlabel('t (s)');ylabel('z(t)');
-	set(gca,'fontSize',18);
+	set(gca,'fontSize',12);
 
 	subplot(6,2,counter);
 	counter = counter+1;
 	plot(bold_simulation_time,bold_outputs(:,region));
 	title(regions{region});
 	xlabel('t (s)');ylabel('BOLD(t)');
-	set(gca,'fontSize',18);
+	set(gca,'fontSize',12);
 end
