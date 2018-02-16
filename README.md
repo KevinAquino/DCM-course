@@ -23,3 +23,5 @@ https://www.youtube.com/watch?v=5FAW27OAy44
 ## DCM III: The linear approximation and the hemodynamic observation model
 https://www.youtube.com/watch?v=UUk5jg0IT4Y
 
+## DCM IV: Toward spectral singatures of activity: Stochastic DCM, Convolutions and the Fourier Transform.
+https://www.youtube.com/watch?v=VG8eHSvdYfs
